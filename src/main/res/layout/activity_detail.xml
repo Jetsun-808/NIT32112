@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0E3B39">
+
+    <!-- Toolbar with Back Button -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0E3B39"
+        android:title=""
+        android:titleTextColor="@android:color/white"
+        app:titleTextColor="@android:color/white"
+        android:elevation="4dp"
+        app:navigationIcon="@drawable/ic_arrow_back" />
+
+    <!-- ScrollView for Content -->
+    <ScrollView
+        android:id="@+id/detailScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:background="#0E3B39">
+
+        <LinearLayout
+            android:id="@+id/detailContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:paddingBottom="16dp">
+            
+            <!-- Card Content -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="@android:color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        style="@style/DetailTextStyle"
+                        android:text="Name: Zeus"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvCulture"
+                        style="@style/DetailTextStyle"
+                        android:text="Culture: Greek"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvDomain"
+                        style="@style/DetailTextStyle"
+                        android:text="Domain: Sky and Thunder"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvSymbol"
+                        style="@style/DetailTextStyle"
+                        android:text="Symbol: Thunderbolt"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvParentage"
+                        style="@style/DetailTextStyle"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvRomanEquivalent"
+                        style="@style/DetailTextStyle"
+                        android:text="Roman Equivalent: Jupiter"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvDescription"
+                        style="@style/DetailTextStyle"
+                        android:text="Description: King of the gods, ruler of Mount Olympus."
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
